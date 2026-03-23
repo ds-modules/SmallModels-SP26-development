@@ -1,0 +1,102 @@
+# LLM Notebooks — README
+
+# TODO Adjust visualization code: Ask the AI assistant to help modify the HTML code to ensure the text-to-background contrast ratio in the notebook meets the 4:1 requirement.z
+
+Four notebooks for exploring large language models hands-on.
+
+---
+
+## 1. `model_weights_tokens_polished.ipynb`
+**Model Weights and Tokens: Numbers All the Way Down**
+
+A beginner-friendly tour of how a language model actually works under the hood.
+
+Covers:
+- How GGUF files store model weights and metadata
+- How text gets broken into tokens
+- How the model generates text step by step
+- What embeddings are and how they capture meaning
+- How words cluster in high-dimensional space (PCA)
+
+Model used: `qwen2-1_5b-instruct-q4_0.gguf`
+
+---
+
+## 2. `QwenTestTaker-shared.ipynb`
+**Qwen SAT Test Taker**
+
+A tool for testing how well a small language model performs on SAT-style questions.
+
+Covers:
+- Loading a GGUF model with `llama-cpp-python`
+- Fetching real SAT questions from the PineSAT API
+- Asking the model to answer in structured JSON format
+- Batch evaluation and scoring
+
+Model used: `qwen2-1_5b-instruct-q4_0.gguf`
+
+---
+
+## Results so far
+- The model handles Easy English questions reasonably well
+- Medium Math questions are challenging — accuracy around 25%
+- Small models (1.5B parameters) have clear limits on math reasoning
+
+---
+
+## Requirements
+- JupyterHub or local Jupyter environment
+- `llama-cpp-python`, `ipywidgets`, `pandas`, `requests`, `huggingface_hub`
+- GGUF model file in `/home/jovyan/shared/` or equivalent
+
+
+## 3. `Personal_Writing_Assistant_v2_JupyterHub_0306.ipynb`
+**Personal Writing Assistant (v2.0)**
+
+A hands-on introduction to prompt engineering and AI control using a local GGUF model.
+Developed by SzuLun Huang, UC Berkeley Data Science.
+
+Covers:
+- How temperature, frequency penalty, and other parameters affect AI output
+- What system prompts are and why they matter
+- Few-shot learning — teaching the model by example instead of instruction
+- Building a personal writing assistant with customizable tone and style
+- Comparing multiple experiment results side by side
+
+Structure:
+- Part 3a: First message to the AI (no system prompt — spot the problem)
+- Part 3b: Add a system prompt and see the difference
+- Part 3c: Real-world system prompt examples (Data 8 vs Data 100)
+- Part 4: Personal writing assistant with mode and style controls
+- Part 5: Few-shot learning
+- Part 5a: AI control panel — adjust temperature and other settings
+- Part 5b: Compare experiment results in a table
+
+Model used: local GGUF model from `/home/jovyan/shared/`
+
+
+## 4. `LLM_Explorer_Jupyter_0306.ipynb`
+**LLM Explorer — The 4GB VRAM Decision Guide**
+
+A data-driven guide to choosing the right AI model for your machine.
+Fetches live data from HuggingFace and calculates real VRAM requirements.
+
+Covers:
+- How VRAM works and why it limits which models you can run
+- How quantization (FP32, FP16, Q8, Q4) affects memory and quality
+- Fetching live model metadata and download stats from the HuggingFace API
+- Joining benchmark scores from the Open LLM Leaderboard
+- Calculating VRAM estimates across quantization formats
+- Interactive data explorer — filter by VRAM budget and format
+- Four visualizations showing model size, popularity, and benchmark scores
+- Model Picker Wizard — 5 questions to narrow down to personalized recommendations
+
+Structure:
+- Step 0: Check your own VRAM + install libraries
+- Step 1: Fetch real model data from HuggingFace
+- Step 2: Fetch benchmark scores
+- Step 3: Calculate VRAM requirements
+- Data Explorer: interactive filter by VRAM budget
+- Visualizations: 4GB VRAM analysis charts
+- Model Picker Wizard: personalized recommendations
+- Reflection Questions
