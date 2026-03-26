@@ -1,5 +1,5 @@
 LLM Notebooks — README
-This repository contains four hands-on notebooks for exploring Large Language Models (LLMs). These tools range from fundamental architecture to practical writing assistants and hardware optimization guides.
+This repository contains "5"(2026/3/26, keep update) hands-on notebooks for exploring Large Language Models (LLMs). These tools range from fundamental architecture to practical writing assistants and hardware optimization guides.
 
 1. model_weights_tokens_polished.ipynb
 Model Weights and Tokens: Numbers All the Way Down
@@ -54,3 +54,18 @@ Features:
 Fetches live data from HuggingFace to calculate real VRAM requirements.
 
 Compares quantization formats (FP16 vs Q4_K_M) against benchmark scores.
+
+5. hello_agent.ipynb
+Hello Agent — Build Your Own AI Agent from Scratch
+Author: [Your Name], UC Berkeley Data Science.
+
+A hands-on introduction to AI agents — from zero to a working agent in one session.
+
+Key Features:
+- Agent Loop: Implements a full ReAct-style agent loop (decide → act → observe → repeat) using llama.cpp locally.
+- Tools: Four tools with safety restrictions — web search (DuckDuckGo), read/write files (locked to workspace), and shell execution (Human-in-the-Loop approval).
+- Robust JSON Parsing: Handles messy model output with a three-strategy fallback parser.
+- Interactive UI: Widget-based interface to run the agent on any task and inspect the full agent trace.
+- Robot Quiz: Hangman-style quiz to test understanding of agent concepts.
+
+Model: Llama-3.2-1B-Instruct-Q4_K_M.gguf
