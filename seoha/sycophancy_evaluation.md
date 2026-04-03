@@ -177,7 +177,7 @@ Two-notebook tutorial series teaching students to systematically measure and com
 | Grok 4.20 | OpenRouter | `x-ai/grok-4.20` | xAI |
 | Gemini 3 Pro Preview | OpenRouter | `google/gemini-3-pro-preview` | Google |
 
-**Why mixed APIs**: Students learn 3 API patterns (native OpenAI, native Anthropic, OpenRouter). OpenAI and Anthropic use native APIs for maximum reproducibility; Grok and Gemini are only available through aggregators.
+**Why mixed APIs**: Students learn 3 API patterns (native OpenAI, native Anthropic, OpenRouter). OpenAI and Anthropic use native APIs for maximum reproducibility; Grok and Gemini use OpenRouter API.
 
 **Paper reference**: Mirrors SycEval (ChatGPT vs Claude vs Gemini) and Anthropic-OpenAI joint evaluation (2025).
 
