@@ -171,8 +171,18 @@ These notebooks cover three different topics:
 
 ---
 
-## Practical Summary
+### In-Progress
+- 3-4-Google_AI_Studio.ipynb
 
-- **`llm_output_drift_tutorial.ipynb`** is a standalone notebook about repeated-run stability in one local model.
-- **`llm_judge_bias_experiment.ipynb`** is a standalone notebook about bias in LLM-as-a-judge evaluation.
-- **`gemma_safety_audit.ipynb`** is a standalone notebook about building a local safety audit workflow for one Gemma model.
+### Planning 
+- Sycophancy Evaluation Notebooks
+- LLM Output stability
+- LLM Judge reliability
+- LLM Safety behavior
+- LLM reasoning behavior
+  
+### Pending (Paused Notebooks -> Personal Summer Projects)
+Honestly, I designed these projects to address a gap I experienced myself. 
+- Debugging Tutor -> Coding Agent Systems for CS with a focus on teachback, understanding debt, and the real skills students still need in the age of AI (Shift from code writing → code reading & review)
+- DATA88E Research Agent (sequential vs parallel, single vs multi agent trade-off) -> Agentic Analysis with a focus on verification, trace observability, and process validation
+- KV Cache Reuse, Sharing, and Quantization (Long Context, Agent Workload)
